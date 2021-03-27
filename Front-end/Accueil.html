@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Atlas - Page d'accueil</title>
+        <link rel="stylesheet" href="css/Accueil.css"/>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <img id="logo" src="css/img/Logos/logo_blanc.png" title ="Logo Atlas" alt="Logo Atlas"/>
+            </div>
+            <div class="liens">
+                <a href="Accueil.html"><img class="icones" src="css/img/Logos/home.png" title = "Page d'accueil" alt="Logo page d'accueil"/></a>
+                <a href="Destinations.html"><img class="icones" src="css/img/Logos/destination.png" title = "Nos destinations" alt="Logo Nos destinations"/></a>
+                <a href="Agences.html"><img class="icones" src="css/img/Logos/localisation.png" title = "Nos agences" alt="Logo nos agences"/></a>
+                <a href="Connexion.html"><input class="Page_connexion" type="button" title = "Cliquer pour vous connecter" value="Se connecter"></a>
+            </div>
+        </nav>
+
+        <main>
+            <h1>Atlas : Votre site de voyage préféré !</h1>
+            <div id="info_bulle_div">
+                <img id="info_bulle_img" src="css/img/info_bulle.png">
+                <p id="info_bulle_p">Covid-19 : Avant de voyager, renseignez-vous sur les mesures sanitaires mises en place dans le pays que vous allez visiter.</p>
+            </div>
+
+            <script type="text/javascript">
+                let info_bulle_img = document.getElementById("info_bulle_img");
+                let info_bulle_p = document.getElementById("info_bulle_p");
+                info_bulle_img.addEventListener("mouseover", () => {info_bulle_p.style.display = "block";});
+                info_bulle_img.addEventListener("mouseout", () => {info_bulle_p.style.display = "none";});
+            </script>
+
+            <div>
+                <section id="cadre_un">
+                    <p>
+                        Nouveautés : <br/>
+                        Vous pouvez désormais ajouter vos destinations favorites ! <br/>
+                        Consultez notre <a href="Destinations.html"> liste de destinations</a>.
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <h2> Votre destination favorite de la semaine : Dubaï ! </h2>
+
+                <section id="cadre_deux">
+
+                    <div id="slider">
+                        <figure>
+                            <img src="css/img/dubai1.jpg">
+                            <img src="css/img/dubai2.jpg">
+                            <img src="css/img/dubai3.jpg">
+                            <img src="css/img/dubai4.jpg">
+                            <img src="css/img/dubai5.jpg">
+                        </figure>
+                    </div>
+                    <div id="bubble1">
+                        <div class="bubble-text">
+                            <h3>Mathieu 29 ans - Lille</h3>
+                            <hr>
+                            <p class="avis">Sûrement le plus beau voyage de ma vie. Foncez sans hésiter !</p>
+                        </div>
+                    </div>
+
+                    <div id="bubble2">
+                        <div class="bubble-text">
+                            <h3>Anne-Catherine 59 ans - Bordeaux</h3>
+                            <hr>
+                            <p class="avis">Idéal pour satisfaire toutes les générations. Je recommande.</p>
+                        </div>
+                    </div>
+
+                    <div id="bubble3">
+                        <div class="bubble-text">
+                            <h3>Abd-El Malik 19 ans - Bobigny</h3>
+                            <hr>
+                            <p class="avis">Merci Atlas pour vos bons conseils, voyage nickel !</p>
+                        </div>
+                    </div>
+                    <p id="paragraphe_dubai">
+                        Les Émirats Arabes Unis se situent dans la péninsule arabique, entre le golfe Persique et le golfe d’Oman. 
+                        Ils ont des frontières avec Oman et l’Arabie saoudite et ils sont séparés de l’Iran part le détroit d’Ormuz. <br/>
+                        La totalité du territoire est désertique ou semi-désertique. Le sud du pays est constitué d’une partie du Rub’ al Khali (« le désert des déserts »), tandis que l’est et le nord sont occupés par des montagnes. Quelques oasis (Al Ain, Manama, etc. ) permettent de maintenir une vie dans le désert. <br/>
+                        L’exploitation de matières premières représente environ 33% du PIB. Les Emirats sont le 3ème plus grand producteur mondial de pétrole. Actuellement, leurs réserves de pétrole et de gaz sont estimées équivalentes à 400 ans d’exploitation. Les activités manufacturières ont connu une croissance sans précédent ces dix dernières années, en particulier dans les secteurs tels que le traitement des métaux, les meubles, la préparation industrielle d’aliments et les bijoux. Le secteur tertiaire contribue, quant à lui, à moins de la moitié du PIB.<br/>
+                        Les Emirats Arabes Unis sont un pays très ouvert au commerce extérieur. En effet, ils font partie des 25 premiers exportateurs et des 30 premiers importateurs mondiaux de marchandises.<br/>
+                        Le taux de chômage reste très faible. Les Emirats sont un pays très stables politiquement. Les Émirats Arabes Unis ont le 4ème PIB le plus élevé par habitant dans le monde.<br/>
+                        Les Emirats Arabes Unis sont membres de l’OMC depuis 1996 et leur économie a été classée « économie la plus compétitive du monde arabe » par le Forum économique mondial de Doha.<br/>
+                        <a href="https://fr.wikipedia.org/wiki/Duba%C3%AF_(%C3%A9mirat)" id="savoir_plus">En savoir plus</a> 
+                    </p>
+                </section>
+            </div>
+            <div>
+                <figure id="pub_figure">
+                    <a href="https://www.fram.fr/sejour/hotels-framissima/">
+                        <img id="pub_img" src="css/img/pub.jpg">
+                    </a>
+                </figure>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: Verdana, sans-serif;
+    background: black;
+    background-image: url("./img/background_accueil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main {
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+	font-family: Verdana, sans-serif;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
+
+#logo{
+    width: 60%;
+    height: 160%;
+    margin-top: -20px;
+}
+
+.Page_connexion {
+    border: 7;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 3px black;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+    
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    background:black;
+    width: 100%;
+    height: 7.5%;
+    box-shadow: 0px 0px 5px black;
+    z-index: 1;
+}
+
+nav .liens {
+    display: flex;
+}
+
+nav .liens img {
+    width: 60px;
+    height: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: italic;
+    font-size: 4em;
+    color: black;
+    margin-top: 110px;
+}
+
+h2{
+    font-family: Arial; 
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-top: 70px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-family: Arial; 
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+#cadre_un{
+    width: 1200px;
+    height: 100px;
+}
+
+#cadre_un p {
+    font-size: 1.6em;
+    text-align: left;
+    color: black;
+}
+
+a {
+    color : blue;
+}
+
+#cadre_un figure {
+    margin-left: 470px;
+}
+
+#cadre_deux {
+    background:#4C4B47;
+    width: 1200px;
+    height: 620px;
+    border-color: black;
+    box-shadow: inset 4px 4px 3px black;
+}
+
+div#slider figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+} 
+
+div#slider figure img { 
+    width: 20%; 
+    height: auto; 
+    float: left;
+}
+
+div#slider { 
+    margin-left: 60px;
+    width: 50%; 
+    max-width: 1000px; 
+    overflow: hidden;
+
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+}
+
+#bubble1 {
+    margin-left: 710px;
+    margin-top: -390px;
+    height: 100px;
+}
+
+#bubble2 {
+    position: absolute;
+    margin-left: 710px;
+    margin-top: 45px;
+    height: 200px;
+}
+
+#bubble3 {
+    position: absolute;
+    margin-left: 710px;
+    margin-top: 190px;
+}
+
+.bubble-text {
+    background: white; 
+    color: black; 
+    padding:7px 15px; 
+    border-radius:3px; 
+    width:400px;
+    height: 85px;
+}
+
+.bubble-text::after {
+    content:""; 
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid white;
+    position: absolute;
+}
+
+.avis {
+    color : black;
+}
+
+#paragraphe_dubai {
+    margin-top: 330px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    text-align: justify;
+}
+
+#savoir_plus {
+    color: blue;
+}
+
+#info_bulle_div {
+    position: absolute;
+    right: 50px;
+
+}
+
+#info_bulle_p {
+    display: none;
+    text-align: right;
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+    position: absolute;
+    top: -390px;
+    right: 10px;
+    width: 450px;
+}
+
+#info_bulle_img {
+    position: absolute;
+    max-width: 40px;
+    max-height: 40px;
+    top: -420px;
+    right: 75px;
+    z-index: 1;
+}
+
+#pub_img {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    color: white;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
